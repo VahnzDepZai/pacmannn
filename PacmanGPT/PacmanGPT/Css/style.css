@@ -1,0 +1,65 @@
+body {
+    width: 1080px;
+    height: 2000px;
+    background-color: black;
+}
+
+#pacman {
+    height: 470px;
+    width: 382px;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+#shim {
+    font-family: 'Permanent Marker', cursive;
+    position: absolute;
+    visibility: hidden
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    color: yellow;
+}
+
+body {
+    width: 342px;
+    margin: 0px auto;
+    font-family: sans-serif;
+}
+
+p {
+    text-decoration: none;
+    color: #0000FF;
+}
+#controls {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-areas: 
+      ". up ."
+      "left start right"
+      ". down .";
+    grid-gap: 10px;
+  }
+  
+  #controls button {
+    width: 60px;
+    height: 60px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #up { grid-area: up; }
+  #left { grid-area: left; }
+  #right { grid-area: right; }
+  #down { grid-area: down; }
+  #start { grid-area: start; }
+  
